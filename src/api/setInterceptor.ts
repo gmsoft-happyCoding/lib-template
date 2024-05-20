@@ -6,12 +6,12 @@ import type { Opts } from './Opts';
 export default (instance: AxiosInstance) => {
   // @ts-ignore
   instance.interceptors.request.use(axiosTokenInterceptor());
-  
+
   const errorHandler = (error: AxiosError & { config: Opts }) => {
     /**
      * 忽略或主动取消请求时不显示错误信息
      */
-    if (!error?.config?.interceptorIgnoreError && !axios.isAxiosError(error)) {
+    if (!error?.config?.interceptorIgnoreError && !axios.isCancel(error)) {
       showNetworkError(error);
     }
 
@@ -20,5 +20,3 @@ export default (instance: AxiosInstance) => {
 
   instance.interceptors.response.use(undefined, errorHandler);
 };
-
-
