@@ -23,7 +23,7 @@
     "pub": "yarn build && yarn publish"
   },
   "devDependencies": {
-    "@gmsoft/auth-sdk": "1.7.0",
+    "@gmsoft/auth-sdk": "1.8.0",
     "@types/node": "^20.12.10",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
@@ -47,7 +47,7 @@
     "vite-plugin-svgr": "^4.2.0"
   },
   "peerDependencies": {
-    "@gmsoft/auth-sdk": "1.7.0",
+    "@gmsoft/auth-sdk": "1.8.0",
     "antd": "3.26.20-custom.4",
     "axios": "0.24.0",
     "qs": "^6.10.3",
