@@ -742,13 +742,13 @@
     state-container "1.5.0"
     styled-components "^5.3.0"
 
-"@gmsoft/auth-sdk@1.9.0":
-  version "1.9.0"
-  resolved "http://192.168.2.10:8081/repository/npm.gm/@gmsoft/auth-sdk/-/auth-sdk-1.9.0.tgz#fd1980e7b0ad8cb106f1d9d5ad17471658d272a9"
-  integrity sha512-H101XrbUfrYyAIECs8IzNNvGgL/oFcuiltVi0nB6dSU5obkUojXLhKsBcq4uHsb//MUcBAeW5pWJeGMhVIivig==
+"@gmsoft/auth-sdk@1.9.1":
+  version "1.9.1"
+  resolved "http://192.168.2.10:8081/repository/npm.gm/@gmsoft/auth-sdk/-/auth-sdk-1.9.1.tgz#32b874c9caa4268f5fb2681bc1a033f0e194548e"
+  integrity sha512-Rgg+K3p9HuYL/I64bV96tjLWJu/QtOxB07Mq9td+GNGVpnmmoEbJ14RlfZp6d7YNOlkYbxlp/nP2L1jevefHhQ==
   dependencies:
     "@gmsoft/ui" "^1.12.3"
-    antd "3.26.20-custom.2"
+    antd "3.26.20-custom.4"
     axios "0.24.0"
     qs "^6.10.1"
     react "^17.0.0"
