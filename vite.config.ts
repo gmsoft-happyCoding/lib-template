@@ -33,7 +33,15 @@ export default defineConfig({
     rollupOptions: {
       // make sure to externalize deps that shouldn't be bundled
       // into your library
-      external: ['react', 'react-dom', 'antd', 'axios', 'qs', '@gmsoft/auth-sdk'],
+      external: [
+        'react',
+        'react-dom',
+        'antd',
+        'axios',
+        'qs',
+        'styled-components',
+        '@gmsoft/auth-sdk',
+      ],
       output: {
         // Provide global variables to use in the UMD build
         // for externalized deps
@@ -43,6 +51,7 @@ export default defineConfig({
           antd: 'antd',
           axios: 'axios',
           qs: 'Qs',
+          'styled-components': 'styled',
           '@gmsoft/auth-sdk': 'AuthSDK',
         },
       },
